@@ -1,0 +1,41 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="{% static 'css/style.css' %}" />
+  </head>
+  <body>
+    <header>
+      <h2>Poll Application</h2>
+    </header>
+    <div class="head">
+        <div class="main">
+          <div class="main1">
+            <h2>Available Polls</h2>
+            <a href ="{% url 'results' %}">
+              <button id="btn">Results</button>
+            </a>
+          </div>
+            
+            {% for question in details %}
+            <div class="q-item">
+              <a href="{% url 'question_detail' question.id %}" class="q-text">
+                {{ forloop.counter }}. {{ question.question }}
+              </a>
+              <a href="{% url 'question_detail' question.id %}">
+                <button class="poll-btn">Poll</button>
+              </a>
+            </div>
+            
+            {% endfor %}
+          </div>
+          
+    </div>
+
+
+   
+  </body>
+</html>

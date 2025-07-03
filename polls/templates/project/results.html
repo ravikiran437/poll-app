@@ -1,0 +1,44 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="{% static 'css/results.css' %}" />
+  </head>
+  <body>
+    <header>
+      <h2>Poll Application</h2>
+      <a href="{% url 'project' %}"> <h3>Home Page </h3></a>
+    </header>
+    <div class="main">
+      
+      <div class="section">
+        <h2>Results</h2>
+        <div class="question">
+          {% for question in details %}
+          <h2>{{ forloop.counter }}. {{ question.question }}</h2>
+
+          <div class="answer">
+            <p>{{ question.option1 }}</p>
+            <p>{{ question.option1_count }} votes</p>
+          </div>
+
+          <div class="answer">
+            <p>{{ question.option2 }}</p>
+            <p>{{ question.option2_count }} votes</p>
+          </div>
+
+          <div class="answer">
+            <p>{{ question.option3 }}</p>
+            <p>{{ question.option3_count }} votes</p>
+          </div>
+
+          <hr />
+          {% endfor %}
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

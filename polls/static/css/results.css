@@ -1,0 +1,51 @@
+body{
+    margin: 0;
+    padding: 0;
+    margin-top: 0;
+}
+header{
+    height:4.5rem;
+    background-color: rgb(216, 216, 148);
+    margin-top: 0;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-bottom: 1rem;
+    
+}
+.main{
+    min-height: 70vh;
+    width: 100%;
+    
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    flex-direction: column;
+}
+.section{
+    height: 60vh;
+    width: 80%;
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: center;
+
+    
+}
+.question{
+    min-height: 4rem;
+    width: 40%;
+    padding: 1rem;
+   
+}
+.answer{
+    display: flex;
+    width: 50%;
+    justify-content: space-between;
+    height: 1.8rem;
+    margin-bottom: 0.2rem;
+}
+h3{
+    
+}

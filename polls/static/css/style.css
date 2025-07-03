@@ -1,0 +1,95 @@
+body{
+    margin: 0;
+    padding: 0;
+    margin-top: 0;
+}
+header{
+    height:4.5rem;
+    background-color: rgb(216, 216, 148);
+    margin-top: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 1rem;
+}
+.main{
+    min-height: 20vh;
+    width: 50%;
+    box-shadow: 2px 4px 10px 3px rgba(0, 0, 0, 0.3);
+    padding: 1.2rem;
+
+}
+.head{
+    min-height: 60vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.q-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #fff;
+    padding: 10px 15px;
+    margin: 10px 0;
+    border-radius: 8px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+    height: 2.5rem;
+  }
+  
+.q-text {
+    text-decoration: none;
+    color: #333;
+    font-weight: 500;
+    max-width: 80%;
+    font-size: 1.3rem;
+  }
+  
+.q-text:hover {
+    color: #007bff;
+  }
+  
+.poll-btn {
+    background-color: #4db8ff;
+    border: none;
+    padding: 6px 12px;
+    border-radius: 5px;
+    color: white;
+    cursor: pointer;
+    width: 3.5rem;
+    font-size: 0.9rem;
+  }
+  
+.poll-btn:hover {
+    background-color: #1a8cff;
+  }
+
+.main1{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+button{
+  height: 2rem;
+}
+#btn{
+  margin-right: 0.5rem;
+  width: 5.5rem;
+  background-color: rgb(28, 137, 28);
+  border-radius: 0.5rem;
+  border: none;
+  cursor: pointer;
+  color: white;
+  font-size: medium;
+}
+
+#btn:hover{
+  background-color: rgb(63, 110, 63);
+}
+
+#btn:active{
+  background-color: green;
+}
