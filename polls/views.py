@@ -14,8 +14,7 @@ def question_view(request, question_id):
 
     if request.method == 'POST':
         selected_option = request.POST.get('option')
-        print("Method:", request.method)
-        print("Selected Option:", selected_option)
+       
 
         if selected_option == question.option1:
             question.option1_count += 1
