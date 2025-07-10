@@ -76,13 +76,10 @@ WSGI_APPLICATION = 'myproject.wsgi.application'
 
 
 DATABASES = {
-    'default': dj_database_url.config(
-        default=os.environ.get(
-            "postgresql://pinterest_db_2ula_user:ToIqWtoO6gCjGF6KeK8SSH8b5gRjx2Bx@dpg-d1npc8juibrs738ardtg-a.oregon-postgres.render.com/pinterest_db_2ula")
+    'default': dj_database_url.parse(
+        "postgresql://pinterest_db_2ula_user:ToIqWtoO6gCjGF6KeK8SSH8b5gRjx2Bx@dpg-d1npc8juibrs738ardtg-a.oregon-postgres.render.com/pinterest_db_2ula"
     )
 }
-
-
 # Password validation
 # https://docs.djangoproject.com/en/5.2/ref/settings/#auth-password-validators
 
