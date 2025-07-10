@@ -5,8 +5,7 @@ from django.shortcuts import render, get_object_or_404,redirect
 import random 
 
 
-def index(request):
-    return HttpResponse("Welcome to  Homepage!")
+
 
 
 def question_view(request, question_id):
