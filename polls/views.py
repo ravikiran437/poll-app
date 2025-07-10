@@ -6,7 +6,7 @@ import random
 
 
 def index(request):
-    return HttpResponse("hello ")
+    return HttpResponse("Welcome to  Homepage!")
 
 
 def question_view(request, question_id):
